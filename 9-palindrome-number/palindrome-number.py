@@ -1,7 +1,7 @@
 class Solution(object):
     def isPalindrome(self, x):
         x = str(x)
-        for i,li in enumerate(x):
-            if li != x[- i - 1]:
+        for li in range(len(x)/2):
+            if x[li] != x[-li-1]:
                 return False
         return True
